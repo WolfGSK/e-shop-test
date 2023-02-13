@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="something">
+      <div></div>
+    </div>
+    <div id="ajaxLoader">
+      <div id="start">
+        <img src="/landing_test_books1.png" alt="" />
+      </div>
+      <div id="end">
+        <img src="/landing_test_grid1.png" alt="" />
+      </div>
+    </div>
+
+    <style>
+      #something {
+        height: 3900px;
+        background-color: lightcoral;
+      }
+
+      #start {
+        height: 1500px;
+        background-color: lightgreen;
+      }
+
+      #end {
+        height: 1500px;
+        background-color: lightseagreen;
+      }
+    </style>
+
+    <script>
+      const ajaxLoader = document.getElementById("ajaxLoader");
+
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          const xhr = new XMLHttpRequest();
+          xhr.open("GET", "127.0.0.1:5500/index.html");
+          xhr.onload = function () {
+            if (this.status === 200) {
+              ajaxLoader.innerHTML = this.responseText;
+            }
+          };
+          xhr.send();
+
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(ajaxLoader);
+
+      //   var d = new Date();
+      //   var timestamp = d.toLocaleString();
+      //   document.cookie =
+      //     "pageload=" +
+      //     timestamp +
+      //     "; expires=Fri, 31 Dec 9999 23:59:59 UTC; path=/";
+    </script>
+  </body>
+
+  <style>
+    #start {
+      height: 1900px;
+      background-color: lightblue;
+    }
+    #data {
+      height: 1900px;
+      background-color: red;
+    }
+  </style>
+</html>
