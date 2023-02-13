@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table class="student-home-grid-container">
+      <tr>
+        <td class="test-grid center-grid" colspan="2" rowspan="2">
+          <div class="center-grid">Content for Box 1</div>
+        </td>
+        <td class="test-grid center-grid" colspan="2" rowspan="1">
+          <div class="center-grid">Content for Box 2</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="test-grid center-grid" colspan="2" rowspan="1">
+          <div class="center-grid">Content for Box 3</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="test-grid center-grid" colspan="1" rowspan="2">
+          <div class="center-grid">Content for Box 4</div>
+        </td>
+        <td class="test-grid center-grid" colspan="1" rowspan="1">
+          <div class="center-grid">Content for Box 5</div>
+        </td>
+        <td class="test-grid center-grid" colspan="1" rowspan="1">
+          <div class="center-grid">Content for Box 6</div>
+        </td>
+        <td class="test-grid center-grid" colspan="1" rowspan="2">
+          <div class="center-grid">Content for Box 7</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="test-grid center-grid" colspan="1" rowspan="1">
+          <div class="center-grid">Content for Box 8</div>
+        </td>
+        <td class="test-grid center-grid" colspan="1" rowspan="1">
+          <div class="center-grid">Content for Box 9</div>
+        </td>
+      </tr>
+    </table>
+
+    <style>
+      table.student-home-grid-container {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+      }
+
+      td.test-grid {
+        padding: 10px;
+        background-color: #f9d736;
+        border-radius: 10px;
+        font-family: "roboto", sans-serif;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .center-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+    </style>
+  </body>
+</html>

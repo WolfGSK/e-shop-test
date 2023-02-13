@@ -7,112 +7,231 @@
     <title>Document</title>
   </head>
   <body>
-    <style>
-      table {
-        border-collapse: collapse;
-        width: 600px;
-      }
+    <table class="grid-schools-container" style="margin: 0 auto">
+      <td style="text-align: center">
+        <table class="vertical-line">
+          <tr class="schools">
+            <td class="grade primary">Α'</td>
+            <td class="school primary">ΔΗΜΟΤΙΚΟΥ</td>
+          </tr>
+          <tr class="schools">
+            <td class="grade primary">B'</td>
+            <td class="school primary">ΔΗΜΟΤΙΚΟΥ</td>
+          </tr>
+          <tr class="schools">
+            <td class="grade primary">Γ'</td>
+            <td class="school primary">ΔΗΜΟΤΙΚΟΥ</td>
+          </tr>
+          <tr class="schools">
+            <td class="grade primary">Δ'</td>
+            <td class="school primary">ΔΗΜΟΤΙΚΟΥ</td>
+          </tr>
+          <tr class="schools">
+            <td class="grade primary">Ε'</td>
+            <td class="school primary">ΔΗΜΟΤΙΚΟΥ</td>
+          </tr>
+          <tr class="schools">
+            <td class="grade primary">ΣΤ'</td>
+            <td class="school primary">ΔΗΜΟΤΙΚΟΥ</td>
+          </tr>
+        </table>
+      </td>
 
-      th,
-      td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: left;
-      }
+      <td>
+        <table class="vertical-line">
+          <tr class="schools">
+            <td class="grade middle">Α'</td>
+            <td class="school middle">ΓΥΜΝΑΣΙΟΥ</td>
+          </tr>
+          <tr class="schools">
+            <td class="grade middle">B'</td>
+            <td class="school middle">ΓΥΜΝΑΣΙΟΥ</td>
+          </tr>
+          <tr class="schools">
+            <td class="grade middle">Γ'</td>
+            <td class="school middle">ΓΥΜΝΑΣΙΟΥ</td>
+          </tr>
+        </table>
+      </td>
 
-      th {
-        background-color: #f2f2f2;
-      }
+      <td>
+        <table>
+          <tr class="schools">
+            <td class="grade high">Α'</td>
+            <td class="school high">ΛΥΚΕΙΟΥ</td>
+          </tr>
+          <tr class="schools">
+            <td class="grade high">B'</td>
+            <td class="school high">ΛΥΚΕΙΟΥ</td>
+          </tr>
+          <tr class="schools">
+            <td class="grade high">Γ'</td>
+            <td class="school high">ΛΥΚΕΙΟΥ</td>
+          </tr>
+        </table>
+      </td>
+      <!-- 
+        <div class="grid-middle-school-container">
+          <div class="schools">
+            <div class="grade middle">Α'</div>
+            <div class="school middle">ΓΥΜΝΑΣΙΟΥ</div>
+          </div>
+          <div class="schools">
+            <div class="grade middle">Β'</div>
+            <div class="school middle">ΓΥΜΝΑΣΙΟΥ</div>
+          </div>
+          <div class="schools">
+            <div class="grade middle">Γ'</div>
+            <div class="school middle">ΓΥΜΝΑΣΙΟΥ</div>
+          </div>
+        </div>
 
-      @media screen and (max-width: 600px) {
-        th,
-        td {
-          display: block;
-          border: none;
-        }
-
-        td {
-          text-align: right;
-          padding-right: 20px;
-        }
-      }
-    </style>
-
-    <table>
-      <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
-      </tr>
-      <tr>
-        <td>Row 1, Column 1</td>
-        <td>Row 1, Column 2</td>
-        <td>Row 1, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 2, Column 1</td>
-        <td>Row 2, Column 2</td>
-        <td>Row 2, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 3, Column 1</td>
-        <td>Row 3, Column 2</td>
-        <td>Row 3, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 4, Column 1</td>
-        <td>Row 4, Column 2</td>
-        <td>Row 4, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 5, Column 1</td>
-        <td>Row 5, Column 2</td>
-        <td>Row 5, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 6, Column 1</td>
-        <td>Row 6, Column 2</td>
-        <td>Row 6, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 7, Column 1</td>
-        <td>Row 7, Column 2</td>
-        <td>Row 7, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 8, Column 1</td>
-        <td>Row 8, Column 2</td>
-        <td>Row 8, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 9, Column 1</td>
-        <td>Row 9, Column 2</td>
-        <td>Row 9, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 10, Column 1</td>
-        <td>Row 10, Column 2</td>
-        <td>Row 10, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 11, Column 1</td>
-        <td>Row 11, Column 2</td>
-        <td>Row 11, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 12, Column 1</td>
-        <td>Row 12, Column 2</td>
-        <td>Row 12, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 13, Column 1</td>
-        <td>Row 13, Column 2</td>
-        <td>Row 13, Column 3</td>
-      </tr>
-      <tr>
-        <td>Row 14, Column 1</td>
-        <td>Row 14, Column 2</td>
-      </tr>
+        <div class="grid-high-school-container">
+          <div class="schools">
+            <div class="grade high">Α'</div>
+            <div class="school high">ΛΥΚΕΙΟΥ</div>
+          </div>
+          <div class="schools">
+            <div class="grade high">Β'</div>
+            <div class="school high">ΛΥΚΕΙΟΥ</div>
+          </div>
+          <div class="schools">
+            <div class="grade high">Γ'</div>
+            <div class="school high">ΛΥΚΕΙΟΥ</div>
+          </div>
+        </div> -->
     </table>
+
+    <style>
+      .schools {
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .vertical-line {
+        border-right: 2px solid #fff;
+        width: 335px;
+      }
+
+      .grade {
+        font-family: "roboto", sans-serif;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        border: 2px solid white;
+        z-index: 2;
+        font-weight: bolder;
+        font-size: 24;
+        color: #172725;
+      }
+
+      .school {
+        font-family: "roboto", sans-serif;
+        position: absolute;
+        width: 120px;
+        padding: 5px 13px;
+        padding-left: 30px;
+        border-radius: 20px;
+        left: 20px;
+        z-index: 1;
+        top: 7px;
+        font-weight: bolder;
+        color: #172725;
+      }
+
+      .primary {
+        background-color: #ff606f;
+      }
+
+      .middle {
+        background-color: #4b93ff;
+      }
+
+      .high {
+        background-color: #ffcb14;
+      }
+
+      .background-schools {
+        margin: 50px auto;
+        position: relative;
+        background-color: #007eff;
+        height: 500px;
+        max-width: 1050px;
+        border-radius: 20px;
+      }
+
+      .test-books-1 {
+        position: absolute;
+        width: 40%;
+        bottom: 0;
+        right: 20%;
+      }
+      /* 
+      @media (max-width: 500px) {
+        .background-schools {
+          margin: 50px auto;
+          position: relative;
+          background-color: #007eff;
+          height: 1000px;
+          width: 480px;
+          border-radius: 20px;
+        }
+
+        .grid-schools-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: repeat(6, 1fr);
+          grid-gap: 16px;
+        }
+
+        .grid-primary-school-container {
+          display: grid;
+          grid-gap: 16px;
+          grid-row: 1 / 7;
+          border-bottom: 2px solid #fff;
+          padding-bottom: 80px;
+        }
+        .grid-primary-school-container::before {
+          display: none;
+        }
+
+        .grid-middle-school-container {
+          display: grid;
+          grid-gap: 16px;
+          grid-row: 7 / 10;
+          border-bottom: 2px solid #fff;
+          width: 480px;
+          padding-bottom: 80px;
+        }
+
+        .grid-high-school-container {
+          display: grid;
+          grid-gap: 16px;
+          grid-row: 10 / 13;
+        }
+
+        .vertical-line {
+          border-left: 6px solid green;
+          height: 500px;
+        }
+
+        .schools {
+          position: relative;
+          top: 50px;
+          left: 100px;
+        }
+
+        .test-books-1 {
+          position: absolute;
+          transform: rotate(-90deg);
+          width: 73%;
+          bottom: 47%;
+          right: -108px;
+        }
+      } */
+    </style>
   </body>
 </html>
