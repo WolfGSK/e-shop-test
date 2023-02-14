@@ -1,0 +1,246 @@
+<!-- BEGINNING OF FORTH TASK -->
+
+<hr style="width: 40%" />
+
+<div class="student-home-grid">
+  <h2>Student home</h2>
+  <div class="student-home-grid-container">
+    <div class="test-grid item1">
+      <p class="column2">Γραφεία</p>
+      <div class="center-grid">
+        <img
+          class="test-grid-img1"
+          src="landing_test_grid1.png"
+          alt="test-grid1"
+        />
+      </div>
+    </div>
+
+    <div class="test-grid item2">
+      <p class="column1">Αποθήκευση</p>
+      <div style="position: relative; left: 75px; top: 5px">
+        <img
+          style="height: 130px"
+          class="test-grid-img2"
+          src="landing_test_grid2.png"
+          alt="test-grid2"
+        />
+      </div>
+    </div>
+
+    <div class="test-grid item3">
+      <p class="column1">Εκτυπωτές</p>
+      <div style="position: relative; left: 90px; top: 5px">
+        <img
+          style="height: 130px"
+          src="landing_test_grid3.png"
+          alt="test-grid3"
+        />
+      </div>
+    </div>
+
+    <div class="test-grid item4">
+      <p class="column2">Καρέκλες</p>
+      <div style="position: relative; left: -30px; top: 20px">
+        <img
+          style="height: 237px"
+          src="landing_test_grid4.png"
+          alt="test-grid4"
+        />
+      </div>
+    </div>
+
+    <div class="test-grid item5">
+      <p class="column1">Φωτιστικά</p>
+      <div style="position: relative; left: 40px">
+        <img
+          style="height: 150px"
+          src="landing_test_grid5.png"
+          alt="test-grid5"
+        />
+      </div>
+    </div>
+
+    <div class="test-grid item6">
+      <p class="column1">Οργάνωση γραφείου</p>
+      <div style="position: relative; left: -30px; top: 5px">
+        <img
+          style="height: 130px"
+          src="landing_test_grid6.png"
+          alt="test-grid6"
+        />
+      </div>
+    </div>
+
+    <div class="test-grid item7">
+      <p class="column2">Πολυμηχανήματα</p>
+      <div style="position: relative">
+        <img
+          style="position: absolute; left: -90px; top: 40px"
+          src="landing_test_grid7.png"
+          alt="test-grid7"
+        />
+      </div>
+    </div>
+
+    <div class="test-grid item8">
+      <p class="column2">Αναλώσιμα</p>
+      <div style="position: relative; left: -30px; top: 5px">
+        <img
+          style="height: 270px"
+          src="landing_test_grid8.png"
+          alt="test-grid8"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .student-home-grid {
+    margin: 100px auto;
+    width: 1050px;
+    text-align: left;
+  }
+  .student-home-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    border-radius: 10px;
+  }
+
+  .center-grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .test-grid {
+    display: flex;
+    padding: auto;
+    margin: 0;
+    background-color: #f9d736;
+    border-radius: 10px;
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+  }
+
+  .column1 {
+    position: relative;
+    top: 115px;
+    left: 10px;
+  }
+
+  .column2 {
+    position: relative;
+    top: 280px;
+    left: 10px;
+  }
+
+  .test-grid-img2 {
+    height: 180px;
+  }
+
+  .test-grid-img2 {
+    height: 180px;
+  }
+
+  .test-grid:nth-child(1) {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .test-grid:nth-child(2) {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+
+  .test-grid:nth-child(3) {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+
+  .test-grid:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+
+  .test-grid:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .test-grid:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .test-grid:nth-child(7) {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+
+  .test-grid:nth-child(8) {
+    grid-column: 4/5;
+    grid-row: 3/5;
+  }
+
+  @media (max-width: 1235px) {
+    .student-home-grid {
+      margin: 100px auto;
+      width: 500px;
+      text-align: center;
+    }
+
+    .student-home-grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(8, 1fr);
+      grid-gap: 10px;
+      border-radius: 10px;
+    }
+
+    .test-grid:nth-child(1) {
+      grid-column: 1/3;
+      grid-row: 1/3;
+    }
+
+    .test-grid:nth-child(2) {
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+
+    .test-grid:nth-child(3) {
+      grid-column: 1/3;
+      grid-row: 4/4;
+    }
+
+    .test-grid:nth-child(4) {
+      grid-column: 1/2;
+      grid-row: 5/7;
+    }
+
+    .test-grid:nth-child(5) {
+      grid-column: 2/2;
+      grid-row: 5/5;
+    }
+
+    .test-grid:nth-child(6) {
+      grid-column: 2/2;
+      grid-row: 6/6;
+    }
+
+    .test-grid:nth-child(7) {
+      grid-column: 1/2;
+      grid-row: 7/8;
+    }
+
+    .test-grid:nth-child(8) {
+      grid-column: 2/2;
+      grid-row: 7/8;
+    }
+  }
+</style>
